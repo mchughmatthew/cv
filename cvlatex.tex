@@ -1,0 +1,421 @@
+\documentclass[10pt,]{article}
+
+\usepackage{changepage} % to indent block text
+\usepackage[margin=0.75in]{geometry}
+%\usepackage[left=0.75in, right=0.75in, top=1in]{geometry}
+
+
+
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+
+
+
+% Now begins the stuff that I added.
+% ----------------------------------
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\large\bf}
+\subsectionfont{\rmfamily\mdseries\normalsize\itshape}
+
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+
+% Make parskips rather than indent with lists.
+\usepackage{parskip}
+\usepackage{titlesec}
+\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{4pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{4pt plus 2pt minus 2pt}
+
+% Use fontawesome. Note: you'll need TeXLive 2015. Update.
+\usepackage{fontawesome}
+
+% Fancyhdr, as I tend to do with these personal documents.
+\usepackage{fancyhdr,lastpage}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0.0pt}
+\renewcommand{\footrulewidth}{0.0pt}
+\lhead{}
+\chead{}
+\rhead{}
+\lfoot{
+\cfoot{\scriptsize  Matthew D. McHugh, PHD, JD, MPH, RN, FAAN - CV }}
+\rfoot{\scriptsize \thepage/{\hypersetup{linkcolor=black}\pageref{LastPage}}}
+
+\usepackage[none]{hyphenat}
+
+% hanging paras
+\usepackage{hanging}
+
+% use bibtex for references
+\usepackage[backend=bibtex,style=numeric]{biblatex}
+\bibliography{mybib.bib}
+
+
+
+% Always load hyperref last.
+\usepackage{hyperref}
+\PassOptionsToPackage{usenames,dvipsnames}{color} % color is loaded by hyperref
+
+\hypersetup{unicode=true,
+            pdftitle={Matthew D. McHugh, PHD, JD, MPH, RN, FAAN:  CV (Curriculum Vitae)},
+            pdfauthor={Matthew D. McHugh, PHD, JD, MPH, RN, FAAN},
+            pdfkeywords={R Markdown, academic CV, template},
+            colorlinks=true,
+            linkcolor=blue,
+            citecolor=Blue,
+            urlcolor=blue,
+            breaklinks=true, bookmarks=true}
+\urlstyle{same}  % don't use monospace font for urls
+
+\begin{document}
+\raggedright
+
+\centerline{\LARGE \sc Matthew D. McHugh, {\large PhD, JD, MPH, RN, FAAN}}
+
+\vspace{2 mm}
+
+\centerline{\large \sc Professor and Independence Endowed Chair for Nursing Education}
+
+\vspace{2 mm}
+
+\hrule
+%\section{\Large \sc Contact Information}
+\begin{tabular}{@{}p{3.5in}p{4in}}
+University of Pennsylvania School of Nursing  & \hspace{1in} {\textit {Phone:}}  215-746-0205 \\  
+Center for Health Outcomes and Policy Research & \hspace{1in} {\textit {email:}}  {\ttfamily \href{mailto:mchughm@nursing.upenn.edu}{\nolinkurl{mchughm@nursing.upenn.edu}}} \\              
+Claire M. Fagin Hall · Rm 379  & \hspace{1in} {\textit {web:}} \href{https://www.nursing.upenn.edu/chopr}{\ttfamily www.nursing.upenn.edu/chopr}\\       
+418 Curie Boulevard · Philadelphia, PA 19104-4217  & \hspace{1in} {\textit {Twitter:}} {\ttfamily @matthewdmchugh}\\     
+\end{tabular}
+
+\vspace{2 mm}
+
+\hrule
+
+\section{\Large \sc {Education}}
+{\textit {Northeastern University School of Law} \hfill 2006 \newline
+\hspace*{0.5cm} {\textbf {JD}} · Law
+
+{\textit {University of Pennsylvania} \hfill 2004 \newline
+\hspace*{0.5cm} {\textbf {PhD}} · Nursing 
+
+{\textit {Harvard University}  \hfill	2003 \newline
+\hspace*{0.5cm} {\textbf {MPH}} · Public Health (Health Policy and Management)
+	
+{\textit {University of Pennsylvania} \hfill 1998 \newline
+\hspace*{0.5cm} {\textbf {MSN}} · Family Nurse Practitioner/Psych. Clinical Nurse Specialist
+
+{\textit {Gwynedd-Mercy University} \hfill	1996 \newline
+\hspace*{0.5cm} {\textbf {BSN}} · Nursing \newline
+
+\section{\Large \sc{Post-Graduate Training \& Fellowships}}
+
+Post-Doctoral Fellowship \hfill 2006-2008 \newline
+Center for Health Outcomes and Policy Research · University of Pennsylvania  \newline
+\hspace*{0.5cm} {\textit {Advanced Training in Nursing Outcomes Research} (T32-NR07104, L. Aiken, PI)
+ 
+Graduate Research Fellow \hfill 2003-2005 \newline
+Institute on Urban Health Research · Northeastern University  \newline
+\hspace*{0.5cm} {\textit {Institute on Urban Health Research Fellowship} (H. Amaro, PI)
+
+Fulbright Scholar \hfill 2001-2002 \newline
+World Health Organization (WHO) · Regional Office for Europe, Copenhagen, Denmark  \newline
+\hspace*{0.5cm} {\textit {The WHO Family Health Nurse Pilot Study}
+
+Post-Masters Certification \hfill 1999 \newline
+University of Pennsylvania School of Nursing · Philadelphia, PA  \newline
+\hspace*{0.5cm} {\textit {Psychiatric-Mental Health Clinical Nurse Specialist} \newline
+
+\section{\Large \sc{Academic Appointments}}
+
+Professor of Nursing \hfill {2017-{\small{\sc{Present}}}} \newline
+\hspace*{0.5cm} {\textit {University of Pennsylvania} · Philadelphia, PA
+
+Associate Professor of Nursing \hfill 2013-2017 \newline
+\hspace*{0.5cm} {\textit {University of Pennsylvania} · Philadelphia, PA
+
+Assistant Professor of Nursing \hfill 2008-2012 \newline
+\hspace*{0.5cm} {\textit {University of Pennsylvania} · Philadelphia, PA \newline
+
+\section{\Large \sc{Administrative Positions}}
+
+Associate Director  \hfill {2013-{\small{\sc{Present}}}} \newline
+\hspace*{0.5cm} Center for Health Outcomes and Policy Research \newline
+\hspace*{0.5cm} University of Pennsylvania
+
+Faculty Director  \hfill {2010-{\small{\sc{Present}}}} \newline
+\hspace*{0.5cm} {\textit {Dual Degree Program in Nursing and Health Care Management} \newline
+\hspace*{0.5cm} University of Pennsylvania (Penn Nursing \& The Wharton School)
+
+Faculty Director  \hfill {2010-{\small{\sc{Present}}}} \newline
+\hspace*{0.5cm} {\textit {Nursing and Health Services Management minor} \newline
+\hspace*{0.5cm} University of Pennsylvania (Penn Nursing \& The Wharton School) \newline
+
+\section{\Large \sc{Other Appointments}}
+
+Adjunct Faculty \hfill {2016-{\small{\sc{Present}}}} \newline
+\hspace*{0.5cm} {\textit {Queensland University of Technology} · Queensland, Australia
+
+Senior Fellow  \hfill {2008-{\small{\sc{Present}}}} \newline
+\hspace*{0.5cm} {\textit {Leonard Davis Institute of Health Economics} · University of Pennsylvania
+
+Senior Fellow  \hfill {2008-{\small{\sc{Present}}}} \newline
+\hspace*{0.5cm} {\textit {Center for Public Health Initiatives} · University of Pennsylvania
+
+Faculty Fellow  \hfill {2012-{\small{\sc{Present}}}} \newline
+\hspace*{0.5cm} {\textit {Penn Institute on Urban Research} · University of Pennsylvania \newline
+
+\section{\Large \sc{Honors, Awards, And Memberships In Honorary Societies}}
+
+Independence Foundation Chair in Nursing Education \hfill {2017-{\small{\sc{Present}}}} \newline
+\hspace*{0.5cm} {\textit {University of Pennsylvania}
+
+Th 2017 IRGNI Research Mentor Award  \hfill 2017	\newline
+\hspace*{0.5cm} {\textit {AcademyHealth Interdisciplinary Research Group on Nursing Issues (IRGNI)} 
+
+2017 Commencement Speaker \hfill 2017	\newline
+\hspace*{0.5cm} {\textit {Queensland University of Technology} · Queensland, Australia
+
+President's Distinguished Alumni Award \hfill 2014 \newline
+\hspace*{0.5cm} {\textit {Gwynedd-Mercy University}
+
+2013	Top 10 Most Read Papers in {\textit {Health Affairs} \hfill 2013
+\vspace{-2.5mm}
+\begin{adjustwidth}{1cm}{1cm}
+{\footnotesize {\textbf {McHugh, M. D., et al. (2013). Hospitals with higher nurse staffing had lower odds of readmissions penalties than hospitals with lower staffing. {\textit {Health Affairs, 32}}(10), 1740-1747.}}}
+\end{adjustwidth}
+
+The Rosemarie Greco Term Endowed Associate Professorship in Advocacy \hfill 2013-2017 \newline
+\hspace*{0.5cm} {\textit {University of Pennsylvania}
+
+Fellow of the American Academy of Nursing \hfill {2012-{\small{\sc{Present}}}}
+
+Dean’s Award for Undergraduate Scholarly Mentorship \hfill 2012	
+
+2011 Robert Wood Johnson Foundation’s Top 5 Most Influential Research Articles \hfill 2011 
+\vspace{-2.5mm}
+\begin{adjustwidth}{1cm}{1cm}
+{\footnotesize {\textbf {McHugh, M. D., et al. (2011). Nurses’ widespread job dissatisfaction, burnout and frustration with health benefits signal problems for patient care. {\textit {Health Affairs, 30}}(2), 202-210.}}}
+\end{adjustwidth}
+
+Robert Wood Johnson Foundation Nurse Faculty Scholar \hfill 2011-2014	
+
+The Family and Community Health Department Scholarship Award \hfill 2011 \newline
+\hspace*{0.5cm} {\textit {University of Pennsylvania}
+
+The Joan Lynaugh Faculty Mentorship Award \hfill 2010 \newline
+\hspace*{0.5cm} {\textit {University of Pennsylvania}
+
+\section{\Large \sc {Research}} 
+
+\hspace*{0.25cm}{\textbf {\textit {Current Research Grants}}}
+
+\textit {A Panel Study of Hospital Nursing Resources and Racial Disparities in Elder Outcomes} \hfill  9/2017--5/2020 \newline
+{\hspace*{0.25cm}{\small{National Institute on Aging (2R01AG041099; {\textbf {McHugh, PI})}}} \hfill \$990,150 
+
+\textit {The Impact of Nursing on Disparities in Surgical Patient Outcomes} ({\textbf{5{\small{th} {\small{\%-ile}}}}) \hfill 9/2017--8/2021 \newline
+{\hspace*{0.25cm}{\small{National Institute of Minority Health \& Disparities (R01 XYZ); {\textbf {McHugh}}/Silber, MPIs)}}}	\hfill \$3,432,000
+
+\vspace{4mm}
+
+\hspace*{0.25cm}{\textbf {\textit {Pending Research Grants}}}
+
+\textit {Advanced Training in Nursing Outcomes Research} ({\textbf{2{\small{nd} {\small{\%-ile}}}}) \hfill  7/2019--6/2024 \newline
+{\hspace*{0.25cm}{\small{National Institute on Nursing Research (T32NR007104--21; Aiken, PI/{\textbf {McHugh, Co-I})}}} \hfill \$2,519,530
+
+\vspace{4mm}
+
+\hspace*{0.25cm}{\textbf {\textit {Past Funded Research Grants}}}
+
+\textit {Graduate Nurse Education Demonstration} \hfill 8/2012--7/2018 \newline
+{\hspace*{0.25cm}{\small{Centers for Medicare and Medicaid Services ({\textbf {McHugh}}/Aiken, MPIs)}}}	\hfill \$37.5 million
+
+\vspace{4mm}
+
+\hspace*{0.25cm}{\textbf {\textit {Doctoral Dissertation}}}
+
+{\textit {The role of readiness for change in the residential treatment recovery outcomes among female adolescents with anorexia nervosa.}} 
+2003-University of Pennsylvania; Chair-Margaret Cotroneo, PhD, APRN) (Dissertation Abstracts International No. AAT 3125871). {\textbf {\small {McHugh, M.D. (2007). Readiness for change and short-term outcomes of female adolescents in residential treatment for anorexia nervosa. {\textit {International Journal of Eating Disorders, 40}}(7), 602-612.}}}
+
+\vspace{4mm}
+
+\hspace*{0.25cm}{\textbf {\textit {Research Consultations}}}
+
+{\textit {Impact of nursing on patient outcomes in Department of Defense hospitals}} \hfill 2016-18 \newline
+\hspace*{0.5cm}U.S. Department of Defense, (Patrician, PI; {\textbf {McHugh}}, Consultant)
+
+{\textit {Improving the Trauma System Response to Disaster}} \hfill 2006-2008 \newline
+\hspace*{0.5cm}National Library of Medicine (R21-LM008700), (Branas, PI; {\textbf {McHugh}}, Consultant)
+
+\vspace{4mm}
+
+\section{\Large \sc{Publications}}
+\hspace*{0.5cm}{\textbf {\small{Research, peer-reviewed (*data-based, {\underline{supervised student/fellow})}}}
+
+%*author, A. A., {\underline {Student, A.}}, \& {\textbf {McHugh, M. D.} (year). Title. {\textit {Journal, Volume}}(Issue): pg-pgx.
+
+%Use hanging paragraphs for publications
+
+\begin{hangparas}{.25in}{1}
+
+*Aiken, L. H., Sloane, D. M., {\underline {Barnes, H.}}, Cimiotti, J., Jarrin, O., \& {\textbf {McHugh, M. D.}} (2018). Nurses’ and patients’ appraisals show patient safety in hospitals is still deficient and recommended measures not implemented. {\textit {Health Affairs, 37}}(11): 1744-1751.
+
+\end{hangparas}
+
+\vspace{4mm}
+
+\hspace*{0.5cm}{\textbf {\small{Monographs, Manuals, or Reports}}}
+
+\begin{hangparas}{.25in}{1}
+
+{\textbf {McHugh, M. D.}} (prepared for the Commonwealth of Pennsylvania Joint State Government Commission). (2015). {
+\textit {Professional Bedside Nursing in Pennsylvania: A Staff Study.}} Joint State Government Commission.
+
+\end{hangparas}
+
+\vspace{4mm}
+
+\hspace*{0.5cm}{\textbf {\small{Book chapters}}}
+
+\begin{hangparas}{.25in}{1}
+
+Clarke, S.P. \& McHugh, M.D. (2009). Measuring and managing outcomes. In D. L. Huber (Ed.), {\textit {Leadership and Nursing Care Management (4th ed.)}} Philadelphia: W.B. Saunders.
+
+\end{hangparas}
+
+\vspace{4mm}
+
+\hspace*{0.5cm}{\textbf {\small{Abstracts, data-based and peer reviewed}}}
+
+\begin{hangparas}{.25in}{1}
+
+{\underline {White, E.}}, Aiken, L. H., \& {\textbf{McHugh, M. D.}} (2018, November). {\textit{The Impact of Registered Nurse Work Environment on Care Quality in Nursing Homes.}} Poster presentation at the Gerontological Society of America's 70th Annual Scientific Meeting, Boston, Massachusetts.
+
+\end{hangparas}
+
+\vspace{4mm}
+
+\section{\Large \sc Recent Lectures, Speeches, And Workshops By Invitation}
+
+
+{\textit {Nurse staffing a key to patient safety: Evidence from Queensland and around the world.}} \hfill 2018 
+\vspace{-2.5mm}
+\begin{adjustwidth}{0.5cm}{1cm}
+Queensland University of Technology (QUT) School of Nursing 40th Anniversary Public Lecture. QUT, Brisbane, Queensland, Australia
+\end{adjustwidth}
+
+{\textit {Improving the Work Environment to Improve Clinician Well-Being and Reduce Burnout.}} \hfill 2018 
+\vspace{-2.5mm}
+\begin{adjustwidth}{0.5cm}{1cm}
+National Academy of Medicine committee meeting on Systems Approaches to Improve Patient Care by Supporting Clinician Well-Being. National Academy of Medicine, Washington, DC
+\end{adjustwidth}
+
+{\textit {Solutions for an Ailing Health System.}} \hfill 2018 
+\vspace{-2.5mm}
+\begin{adjustwidth}{0.5cm}{1cm}
+University of Pennsylvania “On the Road” Series. Penn Alumni - Southern California Regional Advisory Board, Los Angeles, CA
+\end{adjustwidth}
+
+\section{\Large \sc Professional Leadership and Memberships in Scientific Societies}
+
+NIMHD Loan Repayment Grant Review Panel \hfill {2018-{\small{\sc{Present}}}}
+\vspace{-2.5mm}
+\begin{adjustwidth}{0.5cm}{1cm}
+National Institute on Minority Health and Health Disparities (NIMHD) 
+\end{adjustwidth}
+
+AcademyHealth Outstanding Dissertation Award selection committee \hfill {2018-{\small{\sc{Present}}}}
+
+NAM Action Collaborative on Clinician Well-Being and Resilience \hfill 2017
+\vspace{-2.5mm}
+\begin{adjustwidth}{0.5cm}{1cm}
+Invited author for National Academy of Medicine Action Collaborative on Clinician Well-Being and Resilience conceptual model discussion paper
+\end{adjustwidth}
+
+\section{\Large \sc Service Activities at the University of Pennsylvania}
+\vspace{-1mm}
+\hspace*{0.5cm}{\textbf {\textit{\small{School of Nursing Committees}}}}\\
+PhD Statistics Curriculum and Competencies taskforce, Chair \hfill {2018-{\small{\sc{Present}}}}\\
+PhD Curriculum Committee, Member \hfill {2018-{\small{\sc{Present}}}}\\
+Faculty Search Committee, Chair \hfill 2016- 2018\\
+
+\vspace{2mm}
+\hspace*{0.5cm}{\textbf {\textit{\small{University Committees}}}}\\ 
+Center for Undergraduate Research and Fellowship’s Fulbright Program Advisor \hfill 2017\\	
+Penn Population Aging Research Center Advisory Board \hfill {2015-{\small{\sc{Present}}}}\\
+
+\section{\Large \sc Teaching}
+
+\hspace*{0.5cm}{\textbf {\textit{\small{Course Director}}}} \\
+{\textit{Current Issues in Health \& Social Policy} {\small{(Undergraduate/Graduate)}} \hfill 2017\\	
+{\textit{Advances in Health Systems Research \& Analysis}} {\small{(Undergraduate)}} \hfill 2017\\
+
+\vspace{2mm}
+\hspace*{0.5cm}{\textbf {\textit{\small{Guest Lectures at Penn}}}}\\
+{\textit{Secondary data analysis}}; Quantitative Research Designs and Method {\small{(PhD)}} \hfill 2018\\
+{\textit{Nursing outcomes research}}; Pathways to Practice {\small{(Undergraduate)}} \hfill 2017	\\
+{\textit{Secondary data analysis}}; Quantitative Research Designs and Method {\small{(PhD)}} \hfill 2018\\
+{\textit{Nursing and health services research}}; Introduction to Statistics {\small{(Undergraduate)}} \hfill 2017\\
+
+\vspace{2mm}
+\hspace*{0.5cm}{\textbf {\textit{\small{Other Guest Lectures}}}}\\
+{\textit{Introduction to public health policy}}; Introduction to Public Health---LaSalle University {\small{(Graduate)}} \hfill 2015\\
+
+\section{\Large \sc Doctoral Dissertation Committees, Mentorship, \& Advising}}
+\hspace*{0.5cm}{\textbf {\textit{\small{Early Career Faculty Mentorship}}}}\\
+Dr. Hilary Barnes, Assistant Professor, University of Delaware \hfill Pending\\	
+\hspace*{0.5cm}{\textit{The Impact of Nurse Practitioners on Health Outcomes in Outpatient Practices}}; AHRQ K08 mentor
+
+Dr. Pam De Cordova, Assistant Professor, Rutgers University \hfill 2016--{\small{\sc{Present}}}\\
+\hspace*{0.5cm}{\textit{Staffing SAFER - State Analysis for Effective Reporting}}; AHRQ K08-HS024339 mentor
+
+Dr. Olga Jarrin, Assistant Professor; Rutgers University \hfill 2013-2015\\
+\hspace*{0.5cm}{\textit{Comparative Effectiveness of Home Care Environments for Diverse Elders’ Outcomes}}; AHRQ K99-HS02240602 mentor
+
+
+Post-Doctoral Fellows
+2017- Present	Jordan Harrison, National Clinician Scholars Program (NCSP), University of Pennsylvania
+
+
+2017- Present	Anna Krupp, National Clinician Scholars Program (NCSP), University of Pennsylvania
+
+2017- Present	Heather Brom
+
+2016- 2018	Jessica Smith
+Current position: Assistant Professor; University of Texas at Arlington, College of Nursing and Health Innovation.
+
+
+
+
+
+\pagebreak
+\nocite{*}
+\defbibheading{none}
+
+\printbibliography[heading=none,keyword={presentation}]
+
+some other text
+\printbibliography[heading=none,keyword={paper}]
+
+\end{document}
